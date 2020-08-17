@@ -1,0 +1,124 @@
+.App {
+  text-align: center;
+}
+.border-red{
+  border: 1px solid red;
+} 
+/* ----------------- navbar ----------------- */
+.navigation-bar{
+  font-family: 'Bungee', cursive;
+}
+
+/* ----------------- main ----------------- */
+.main{
+  background-image:url(images/bg-main.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  display:flex;
+}
+.typewrite{
+  font-family: 'VT323', monospace;
+  color: white;
+}
+
+/* ----------------- about ----------------- */
+.about{
+  background-image:url(images/bg-about.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  display:flex;
+}
+.card{
+  align-items: center;
+}
+.cards{
+  display: flex;
+}
+.card-main{
+  border: none !important;
+}
+.about-card{
+  font-family: 'Signika', sans-serif;
+  color: rgb(130, 199, 219);
+}
+.resume-btns{
+  display: flex;
+  justify-content: center;
+  color: rgb(184, 114, 181) 
+}
+.resume-btns:hover{
+  display: flex;
+  justify-content: center;
+  color:  rgb(114, 184, 178) 
+}
+/* ----------------- projects ----------------- */
+.projects{
+  background-image:url(images/bg-projects.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+}
+.projects-title{
+  text-align: left;
+  font-size: 45px;
+  color:rgb(255, 255, 255);
+  margin-left: 3%;
+  padding-Top: 7%;
+  font-family: 'Bungee', cursive;
+ }
+.carousel{
+  margin-top:-3%;
+  margin-left: 7%;
+  padding-bottom: 4%;
+  width:80%;
+}
+.card-title{
+  font-family: 'Bungee', cursive;
+  color: rgb(130, 199, 219); 
+}
+.card-sub{
+  font-family: 'Signika', sans-serif;
+  color: rgb(216, 127, 197);
+}
+.card-button{
+  background-color:  rgb(114, 184, 178) !important;
+  border: none !important;
+  font-family: 'Signika', sans-serif;
+}
+.card-button:hover{
+  background-color:  rgb(184, 114, 181) !important;
+  border: none !important;
+  font-family: 'Signika', sans-serif;
+}
+/* ----------------- contact ----------------- */
+.contact{
+  background-image:url(images/bg-contact.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+}
+.email{
+  font-family: 'VT323', monospace;
+  background-color: palevioletred;
+}
+/* ----------------- footer ----------------- */
+.footer{
+  background-color: rgb(130, 199, 219); 
+  font-family: 'VT323', monospace;
+  color: white;
+  padding: 1px;
+}
