@@ -3,14 +3,21 @@ import EmailButton from './EmailButton';
 
 
 const Contact = () => {
+
+    const myFunction = () => {
+        alert("My email has been copied to your clipboard! 🎉");
+    }
+
     return (
-        <div className="contact border-red" id="contact">
-            <div style={{ paddingTop: "20%", marginLeft: "60%" }}>
+        <section className="contact border-red" id="contact">
+            <div className="container border-red" >
 
-                <EmailButton />
+                <h1 onClick={() => myFunction()}>
+                    <EmailButton />
+                </h1>
+
             </div>
-
-        </div>
+        </section>
     )
 }
 

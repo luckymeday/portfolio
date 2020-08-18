@@ -50,7 +50,10 @@ class EmailButton extends Component {
                 <div className={classnames(
                     'clipboard-caption',
                     { 'clipboard-caption-active': this.state.clipboardCaption }
-                )}><h6 className="email">My email has been copied to your clipboard!</h6></div>
+                )}>Contact
+                
+           
+                </div>
             </Clipboard>
         );
     }

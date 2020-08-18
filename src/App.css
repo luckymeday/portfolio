@@ -1,14 +1,22 @@
+html {   scroll-behavior: smooth; }
+
 .App {
   text-align: center;
 }
-.border-red{
+/* .border-red{
   border: 1px solid red;
-} 
+}   */
+section{
+  display: flex;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  align-items: center;
+  flex-direction: column;
+}
 /* ----------------- navbar ----------------- */
 .navigation-bar{
   font-family: 'Bungee', cursive;
 }
-
 /* ----------------- main ----------------- */
 .main{
   background-image:url(images/bg-main.png);
@@ -20,11 +28,19 @@
   align-items: center;
   display:flex;
 }
+#main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .typewrite{
   font-family: 'VT323', monospace;
-  color: white;
+  color: rgb(255, 255, 255);
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center!important;
 }
-
 /* ----------------- about ----------------- */
 .about{
   background-image:url(images/bg-about.png);
@@ -36,28 +52,43 @@
   align-items: center;
   display:flex;
 }
+#about{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .card{
   align-items: center;
 }
-.cards{
-  display: flex;
-}
 .card-main{
   border: none !important;
-}
-.about-card{
   font-family: 'Signika', sans-serif;
-  color: rgb(130, 199, 219);
+  color: rgb(150, 218, 235) !important;
+}
+.skills-title{
+  font-size: 35px;
+  color:white;
+  font-family: 'Bungee', cursive;
+ }
+.tools img{
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+.tools img:hover {
+  filter: none;
+  -webkit-filter: grayscale(0%);
+}
+.ul{
+  display: flex;
 }
 .resume-btns{
-  display: flex;
-  justify-content: center;
-  color: rgb(184, 114, 181) 
+  align-self:flex-end;
 }
-.resume-btns:hover{
-  display: flex;
-  justify-content: center;
-  color:  rgb(114, 184, 178) 
+.resume-btns .text-white{
+  color: rgb(150, 218, 235) !important; 
+}
+.resume-btns .text-white :hover{
+  color:  rgb(231, 165, 226) 
 }
 /* ----------------- projects ----------------- */
 .projects{
@@ -69,20 +100,17 @@
   width: 100%;
   align-items: center;
 }
+#projects{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .projects-title{
-  text-align: left;
+  /* text-align: left; */
   font-size: 45px;
-  color:rgb(255, 255, 255);
-  margin-left: 3%;
-  padding-Top: 7%;
+  color:white;
   font-family: 'Bungee', cursive;
  }
-.carousel{
-  margin-top:-3%;
-  margin-left: 7%;
-  padding-bottom: 4%;
-  width:80%;
-}
 .card-title{
   font-family: 'Bungee', cursive;
   color: rgb(130, 199, 219); 
@@ -92,12 +120,12 @@
   color: rgb(216, 127, 197);
 }
 .card-button{
-  background-color:  rgb(114, 184, 178) !important;
+  background-color:  rgb(150, 218, 235) !important;
   border: none !important;
   font-family: 'Signika', sans-serif;
 }
 .card-button:hover{
-  background-color:  rgb(184, 114, 181) !important;
+  background-color:  rgb(231, 165, 226) !important;
   border: none !important;
   font-family: 'Signika', sans-serif;
 }
@@ -111,9 +139,28 @@
   width: 100%;
   align-items: center;
 }
-.email{
-  font-family: 'VT323', monospace;
-  background-color: palevioletred;
+#contact{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.clipboard-button{
+  font-family: 'Bungee', cursive;
+  font-size: larger;
+  background-color: white;
+  color: rgb(150, 218, 235);
+  border: rgb(231, 165, 226) 5px solid;
+  border-radius: 50px;
+  padding:20px;
+}
+.clipboard-button:hover{
+  font-family: 'Bungee', cursive;
+  font-size: larger;
+  background-color: rgb(231, 165, 226);
+  color:white;
+  border: rgb(150, 218, 235) 5px solid;
+  border-radius: 50px;
+  padding:20px;
 }
 /* ----------------- footer ----------------- */
 .footer{

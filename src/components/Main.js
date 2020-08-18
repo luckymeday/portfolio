@@ -1,5 +1,4 @@
 import React from 'react';
-import { Col } from "react-bootstrap";
 
 const Main = () => {
 
@@ -61,21 +60,18 @@ const Main = () => {
     };
 
     return (
-        <div className="main" id="main" >
-            <div className="container border-red">
-                <Col>
-                    <div className="typewrite border-red" style={{
-                        marginTop: "13%", marginLeft: "-1%"
-                    }}>
-                        <h1 >I like to float free in
-            <span className="txt-rotate" data-period="2000"
-                                data-rotate='[ " spac...", " web!"]'>
-                            </span>
-                        </h1>
-                    </div>
-                </Col>
+        <section className="main" id="main" >
+            <div className="container">
+
+                <div className="typewrite border-red">
+                    <h1 style={{ paddingTop: "10%" }}>I like to float free in
+                            <span className="txt-rotate" data-period="2000" data-rotate='[ " spac...", " web!"]'>
+                        </span>
+                    </h1>
+                </div>
+
             </div>
-        </div >
+        </section>
     )
 }
 
